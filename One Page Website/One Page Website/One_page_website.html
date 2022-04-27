@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="./CSS/one_page_website.css">
+<script src="./JS/one_page_website.js"></script>
+</head>
+<title>All about dogs</title>
+<h1><p style="text-decoration: underline;">Dogs and why we love them:</p></h1>
+<body>
+<!-- NAV -->
+<div>
+<div>
+<nav>
+<a href="#home" id="link"><li>HOME</li></a>
+<a href="#gallery"><li>GALLERY</li></a>
+<a href="#contact"><li>CONTACT</li></a>
+</nav>
+</div>
+<!-- GALLERY -->
+<section>
+<div id="gallery">
+<h1>Gallery of dog pictures:</h1>
+<div>
+<!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column">
+      <img src="dog1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="dog2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 2</div>
+        <img src="dog1.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 2</div>
+        <img src="dog2.jpg" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="dog1.jpg" onclick="currentSlide(1)" alt="Joe">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="dog2.jpg" onclick="currentSlide(2)" alt="Herc">
+      </div>
+    </div>
+  </div>
+
+<!-- VIDEO-CONTAINER 1-->
+<video width="1080" height="720" controls>
+<source src="Y2Mate.is - Dogs playing outside 7-7-2011-Jjql2hBR7Dw-720p-1646836277618.mp4" type="video/mp4">
+</video>
+<p> The video above shows dogs playing </p>
+<!-- END VIDEO-CONTAINER 1 -->
+<!-- CONTACT -->
+<section>
+<div id="contact">
+<div>
+<div>
+<p>
+Please provide us with your contact information if you are interested in adopting any of these dogs:
+</p>
+<div>
+<form action="" method="post">
+<input class="rsvp" type="text" value="First Name">
+<input class="rsvp" type="text" value="Last Name">
+<input class="rsvp" type="text" value="Email Address">
+<input class="rsvp" type="text" value="Phone Number">
+<div class="form-spacer">
+</div>
+<div>
+<input type="submit" value="Submit">
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--END CONTACT -->
+<footer>
+ <p><strong>Created by James</strong></p> 
+ <p><a href="james.vanwil@gmail.com">james.vanwil@gmail.com</a></p>
+</footer>
+
